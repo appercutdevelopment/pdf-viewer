@@ -1,12 +1,12 @@
 {
-  "name": "pdf-viewer",
-  "displayName": "PDF Viewer",
+  "name": "pdf-lite",
+  "displayName": "PDF Lite",
   "description": "Open and read PDF files directly in VS Code",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "appercutdevelopment",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Other"],
-  "keywords": ["pdf", "viewer", "reader"],
+  "keywords": ["pdf", "viewer", "reader", "lite"],
   "repository": { "type": "git", "url": "https://github.com/appercutdevelopment/pdf-viewer" },
   "homepage": "https://github.com/appercutdevelopment/pdf-viewer",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "customEditors": [
       {
         "viewType": "pdfViewer.pdf",
-        "displayName": "PDF Viewer",
+        "displayName": "PDF Lite",
         "selector": [{ "filenamePattern": "*.pdf" }],
         "priority": "default"
       }
