@@ -1,0 +1,15 @@
+<svg viewBox="0 0 128 128" width="128" height="128" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>PDF Viewer icon</title>
+  <desc>A document page with folded corner and PDF label centered on the page</desc>
+
+  <rect width="128" height="128" rx="22" fill="#1e1e2e"/>
+
+  <polygon points="24,16 90,16 104,30 104,112 24,112" fill="#ffffff"/>
+
+  <polygon points="90,16 104,30 90,30" fill="#b0b0c0"/>
+
+  <text x="63" y="72" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#e53935" text-anchor="middle" letter-spacing="2">PDF</text>
+
+  <rect x="34" y="82" width="54" height="3.5" rx="1.75" fill="#d0d0da"/>
+  <rect x="34" y="91" width="42" height="3.5" rx="1.75" fill="#d0d0da"/>
+</svg>
