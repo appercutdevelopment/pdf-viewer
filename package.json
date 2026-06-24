@@ -1,0 +1,36 @@
+{
+  "name": "pdf-viewer",
+  "displayName": "PDF Viewer",
+  "description": "Open and read PDF files directly in VS Code",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "keywords": ["pdf", "viewer", "reader"],
+  "repository": { "type": "git", "url": "https://github.com/appercutdevelopment/pdf-viewer" },
+  "license": "MIT",
+  "licenseUrl": "LICENSE.md",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "pdfViewer.pdf",
+        "displayName": "PDF Viewer",
+        "selector": [{ "filenamePattern": "*.pdf" }],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node scripts/download-pdfjs.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}

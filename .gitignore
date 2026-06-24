@@ -1,0 +1,5 @@
+out/
+node_modules/
+media/pdfjs/
+*.zip
+*.vsix
