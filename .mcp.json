@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "xdoc": {
+      "type": "stdio",
+      "command": "/Volumes/KINGSTON/Dev/ios/Xdoc/xdoc-mcp/xdoc-mcp",
+      "args": ["/Volumes/KINGSTON/OKF"]
+    }
+  }
+}
