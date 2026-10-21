@@ -1,6 +1,6 @@
 # PDF Viewer (PDF Lite) — Plan
 
-Thin and living — reorder slices as you learn. See /standards/delivery.md.
+Thin and living — reorder slices as you learn.
 
 ## Milestone: <name>
 *(Existing production app — fill in the current focus/milestone here.)*

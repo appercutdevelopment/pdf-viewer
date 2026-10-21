@@ -1,19 +1,29 @@
 # PDF Viewer (PDF Lite) — Engineering Charter
 
-This project follows Company Knowledge (OKF bundle at /Volumes/KINGSTON/OKF). No exceptions.
+A VS Code extension, published as "PDF Lite" (package `pdf-lite`), that opens `.pdf` files in a
+custom editor backed by Mozilla's PDF.js: page navigation, zoom, search, text selection, outline,
+thumbnails and print. PDF.js is fetched by the `postinstall` script, not committed as a dependency.
 
 ## Before architecting or implementing
-1. Read /standards/index.md — architecture, delivery, ways-of-working, testing, documentation.
-2. No stack playbook exists yet for TypeScript/VS Code extensions under /stacks/ — author one there
-   if this work is the first to need it (see project-starter.md's "author only when first needed" rule).
-3. Read this project's profile: /projects/pdf-viewer.md
+Read, in order: README.md, docs/plan.md, docs/decisions/ (the ADRs).
 
 ## While working
-- Keep docs/plan.md current — work in vertical slices and iterations per /standards/delivery.md.
-- Record non-obvious or costly-to-reverse decisions as ADRs in docs/decisions/
-  (template: docs/decisions/0000-adr-template.md). Follow /standards/decision-records.md.
-- Follow the architecture principles and the chosen stack's conventions.
+- **Story first.** Every slice starts from a GitHub story issue. Every PR says `Closes #<story>` or
+  `Contributes to #<story>`. Agents open PRs; they never merge them and never push to `main`.
+- **Commits:** Conventional Commits whose body explains why. No AI or tool attribution.
+- **Checks:** `npm run compile` must pass. There is no test suite or CI yet.
+- **Tests:** every behaviour change has a test; every bug fix has a test that fails without the fix.
+- **Plan and decisions:** keep docs/plan.md current and work in vertical slices. Record non-obvious
+  or costly-to-reverse decisions as ADRs in docs/decisions/ (template:
+  docs/decisions/0000-adr-template.md).
+- **Docs** change in the same PR as the code, describe the system as it is, and say "the user", not
+  a person's name.
+- **The user decides.** Present evidence and a recommendation. Never round an unchecked box up to
+  "done".
 
 ## Definition of Done
-Enforce the shared gate in /standards/ways-of-working.md (per change) and the iteration
-gate in /standards/delivery.md before calling anything done.
+- [ ] Rules followed, or the deviation recorded as an ADR
+- [ ] Tests added or updated for the behaviour changed
+- [ ] Docs current; real decisions recorded
+- [ ] `npm run compile` green
+- [ ] Anything surprising is written down (ADR or the PR's Lessons line)
